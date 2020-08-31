@@ -21,7 +21,7 @@ Resources:
     DependsOn: CloudFormationRole
     DeletionPolicy: Retain
     Properties:
-      BucketName: !Sub '${ProjectName}-artifacts'
+      BucketName: !Sub '${ProjectName}-packages'
 
   CodeBuildRole:
     Type: AWS::IAM::Role
